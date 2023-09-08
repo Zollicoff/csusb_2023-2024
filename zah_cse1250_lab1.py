@@ -6,14 +6,15 @@
 # This program lets a user type and display their name and is greeted
 
 # user is prompted to input name
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
+firstName = input("Enter your first name: ")
+lastName = input("Enter your last name: ")
 
 # display user's name and welcome message
 print()
-print("Hello, " + first_name + " " + last_name + "!")
+print("Hello, " + firstName + " " + lastName + "!")
 print("Welcome to Python!")
 
 # exit message
 print()
 print("Have a nice day!")
+print()
