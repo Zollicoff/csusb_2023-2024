@@ -3,6 +3,8 @@
 # Lab Section 83005
 # Lab 2
 
+# this program shows you the first 8 powers of 2 using math operators
+
 # user greeting
 print()
 print('Welcome to the powers of 2 program!')
