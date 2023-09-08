@@ -3,7 +3,7 @@
 # September 7th, 2023
 # Lab 1
 
-# This program lets a user type and display their name and is
+# This program lets a user type and display their name and is greeted
 
 # user is prompted to input name
 first_name = input("Enter your first name: ")
