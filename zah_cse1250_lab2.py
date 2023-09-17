@@ -11,14 +11,14 @@ print('Welcome to the powers of 2 program!')
 print()
 
 # create variables and do exponential calculations
-firstPower = 2**1
-secondPower = 2**2
-thirdPower = 2**3
-fourthPower = 2**4
-fifthPower = 2**5
-sixthPower = 2**6
-seventhPower = 2**7
-eighthPower = 2**8
+firstPower = 2 ** 1
+secondPower = 2 ** 2
+thirdPower = 2 ** 3
+fourthPower = 2 ** 4
+fifthPower = 2 ** 5
+sixthPower = 2 ** 6
+seventhPower = 2 ** 7
+eighthPower = 2 ** 8
 
 # display results
 print()
