@@ -40,4 +40,4 @@ print("Have a great day!")
 print()
 
 # Require user to press enter to exit program
-input("Press Enter to exit the program...")
+input("Please press Enter to exit the program...")
