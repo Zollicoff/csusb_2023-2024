@@ -38,3 +38,6 @@ print()
 # end of program salutation
 print("Have a great day!")
 print()
+
+# Require user to press enter to exit program
+input("Press Enter to exit the program...")
