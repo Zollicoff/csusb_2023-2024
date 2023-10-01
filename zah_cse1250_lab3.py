@@ -25,3 +25,6 @@ print()
 # Exit message
 print("Thanks you for using the Power Calculator!")
 print("Have a nice day!")
+
+# Require user to press enter to exit program
+input("Press Enter to exit the program...")

@@ -6,13 +6,14 @@
 # This program lets a user enter two integers and displays the results of all arithmetic operations
 
 # Welcome message and user instructions for program
-print("This program will let you enter two integer values then show you all of the possible answers.")
+print("This program will let you enter two integer values "
+      "then it will show you all of the possible answers.")
 print("Please enter only whole numbers.")
 print()
 
 # Get user input for two integers
-num1 = int(input("Please enter the first number: "))
-num2 = int(input("Please enter the second number: "))
+num1 = int(input("Please enter the first integer: "))
+num2 = int(input("Please enter the second integer: "))
 print()
 
 # Perform arithmetic operations and store results in variables
@@ -36,3 +37,7 @@ print()
 
 # end of program salutation
 print("Have a great day!")
+print()
+
+# Require user to press enter to exit program
+input("Press Enter to exit the program...")

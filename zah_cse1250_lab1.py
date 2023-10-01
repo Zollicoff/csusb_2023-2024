@@ -18,3 +18,6 @@ print("Welcome to Python!")
 print()
 print("Have a nice day!")
 print()
+
+# Require user to press enter to exit program
+input("Press Enter to exit the program...")
