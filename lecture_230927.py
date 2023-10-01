@@ -32,7 +32,7 @@ while run:
     print()
     
     error = True
-    while erro == False
+    while error == False:
         # Run again input
         choice = input('Would you like to run the program again (y or n): ').lower()
 
