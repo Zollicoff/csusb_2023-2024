@@ -4,6 +4,8 @@
 # Lab 3
 
 # This program lets a user enter any integer base and integer exponent and displays the result
+
+# Welcome message and user instructions for program
 print("This program will let you raise any integer to any integer power.")
 print("Remmber to use only Whole numbers.")
 print()
