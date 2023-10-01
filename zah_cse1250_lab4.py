@@ -12,8 +12,18 @@ print("Please enter only whole numbers.")
 print()
 
 # Get user input for two integers
-num1 = int(input("Please enter the first integer: "))
-num2 = int(input("Please enter the second integer: "))
+while True:
+    try:
+        num1 = int(input("Please enter the first integer: "))
+        num2 = int(input("Please enter the second integer: "))
+        if num2 == 0:
+            print("Invalid input. The second integer cannot be 0. Please start over.")
+            print()
+            continue
+        break
+    except ValueError:
+        print("Invalid input. Only integers are allowed. Please start over.")
+        print()
 print()
 
 # Perform arithmetic operations and store results in variables
