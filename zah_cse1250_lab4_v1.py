@@ -1,7 +1,7 @@
 # Zachary Hampton
 # October 1, 2023
 # Lab Section 83005
-# Lab 4
+# Lab 4 - Version 2 with Error Loops
 
 # This program lets a user enter two integers and displays the results of all arithmetic operations
 
@@ -12,18 +12,8 @@ print("Please enter only whole numbers.")
 print()
 
 # Get user input for two integers
-while True:
-    try:
-        num1 = int(input("Please enter the first integer: "))
-        num2 = int(input("Please enter the second integer: "))
-        if num2 == 0:
-            print("Invalid input. The second integer cannot be 0. Please start over.")
-            print()
-            continue
-        break
-    except ValueError:
-        print("Invalid input. Only integers are allowed. Please start over.")
-        print()
+num1 = int(input("Please enter the first integer: "))
+num2 = int(input("Please enter the second integer: "))
 print()
 
 # Perform arithmetic operations and store results in variables
@@ -48,6 +38,3 @@ print()
 # end of program salutation
 print("Have a great day!")
 print()
-
-# Require user to press enter to exit program
-input("Press Enter to exit the program...")
