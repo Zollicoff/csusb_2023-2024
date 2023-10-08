@@ -23,7 +23,6 @@ while True:
 total_cost = ( distance / mpg ) * cost_per_gallon
 
 # Print the total cost of gas for the trip
-print(f"\nThe cost of gas for this trip is/was: ${total_cost:.2f}\n\n"
-      "Have a nice day!\n")
+print(f"\nThe cost of gas for this trip is/was: ${total_cost:.2f}\n")
 
-input('Press enter to exit.')
+input('Have a nice day! (Press enter to exit the program)')
