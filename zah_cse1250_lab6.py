@@ -22,8 +22,9 @@ while True:
 # Calculate the total cost of gas for the trip
 total_cost = ( distance / mpg ) * cost_per_gallon
 
-# Print the total cost of gas for the trip
+# Print the total cost of gas for the trip and end of program salutation
 print(f"\nThe cost of gas for this trip is/was: ${total_cost:.2f}\n\n"
       "Have a nice day!\n")
-      
+
+# Ask user to press enter to exit the program
 input("Press enter to exit the program...")
