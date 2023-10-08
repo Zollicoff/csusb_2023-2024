@@ -3,7 +3,9 @@
 # Lab Section 83005
 # Lab 6
 
-# This program will calculate the cost of gasoline for a trip.
+# This program will calculate the cost of gasoline for a trip
+
+# Welcome message and instructions
 print("This program will calculate the cost of gasoline for a trip.\n"
       "You will need to know your car's MPG, what you paid for a gallon of gas, and the distance in miles you traveled.\n")
 
@@ -22,4 +24,6 @@ total_cost = ( distance / mpg ) * cost_per_gallon
 
 # Print the total cost of gas for the trip
 print(f"\nThe cost of gas for this trip is/was: ${total_cost:.2f}\n\n"
-      "Have a nice day!")
+      "Have a nice day!\n")
+
+input('Press enter to exit.')
