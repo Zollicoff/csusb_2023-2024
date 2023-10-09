@@ -1,31 +1,32 @@
 # Zachary Hampton
 # Lab Section 83005
-# Date: October 8, 2023
+# Date: October 9, 2023
 # Lab 7
 
-# This program prompts the user to enter either 'A', 'B', or 'C', and displays a corresponding word.
+# This program prompts the user to enter either 'A', 'B', or 'C', and displays a corresponding sentence.
 
 # Welcome message salutation
-print("Welcome to the fruit program!\n")
+print("Please enter an A, B, or C to display a particular sentence. Use capital letters.")
 
-# Get user input and apply to fruit variable
+# Get and check user input and apply to fruit variable
 while True:
-    fruit = input("Please enter 'A' for Apple, 'B' for Banana, or 'C' for Coconut: ")
-    if fruit in ['A', 'B', 'C']:
+    letter = input("\n Please enter an A, B, or C: ")
+    if letter in ['A', 'B', 'C']:
         break
     else:
-        print("Invalid input. Please enter 'A', 'B', or 'C'.")
+        print("\nInvalid input. Please enter A, B, or C.")
 
-# Check user input and display corresponding word
-if fruit == 'A':
+# Check against user input and display corresponding sentence
+if letter == 'A':
     print("\nYou got an Apple!")
-elif fruit == 'B':
+elif letter == 'B':
     print("\nYou got a Banana!")
-elif fruit == 'C':
+elif letter == 'C':
     print("\nYou got a Coconut!")
 
 # Exit message salutation
-print("\nThank you for using the fruit program.\n\n"
+print("\nThank you for using this program.\n\n"
       "Have a nice day!")
 
+# Exit program prompt
 input("\nPress enter to exit the program...")
