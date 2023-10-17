@@ -1,6 +1,6 @@
 # Zachary Hampton
 # Lab Section 83005
-# Date: October 9, 2023
+# October 9, 2023
 # Lab 7
 
 # This program prompts the user to enter either 'A', 'B', or 'C', and displays a corresponding sentence.
