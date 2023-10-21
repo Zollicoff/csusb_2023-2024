@@ -24,7 +24,6 @@ while run_program.upper() == 'Y':
         operation = input("Error, please choose an 'a', 's', 'm', 'd', 't', or 'e': ").lower()
 
     # Get the user input for first and second number while error checking for proper input
-    # Get the user input for first and second number while error checking for proper input
     while True:
         try:
             num1 = float(input("\nPlease enter the first number: "))
