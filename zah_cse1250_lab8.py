@@ -23,7 +23,7 @@ while run_program.upper() == 'Y':
     while operation not in ['a', 's', 'm', 'd', 't', 'e']:
         operation = input("Error, please choose an 'a', 's', 'm', 'd', 't', or 'e': ").lower()
 
-    # Get the user input for first and second number while error checking for proper input
+    # Get the user input for first and second number while error checking for proper input and division by zero
     while True:
         try:
             num1 = float(input("\nPlease enter the first number: "))
