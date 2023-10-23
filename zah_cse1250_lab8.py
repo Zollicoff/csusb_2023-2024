@@ -1,4 +1,4 @@
-# Zachary Hampton
+# Zachary A. Hampton
 # Lab Section 83005
 # October 22, 2023
 # Lab 8
