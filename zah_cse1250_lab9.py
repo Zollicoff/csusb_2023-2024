@@ -4,19 +4,21 @@
 # Lab 9
 
 # Greeting
-print("Welcome to the Metric Conversion program!")
-print("\nThis program will convert Inches to Centimeters, Centimeters to Inches, Ounces to Grams, Grams to Ounces, Miles to Kilometers, or Kilometers to Miles.")
+print("Welcome to the Metric Conversion program!"
+      "\nThis program will convert Inches to Centimeters, "
+      "Centimeters to Inches, Ounces to Grams, Grams to Ounces, "
+      "Miles to Kilometers, or Kilometers to Miles.")
 
 # Main Program Loop
 run_program = True
 while run_program:
     # Explain the conversion list
-    print("\nEnter I to convert from Inches to Centimeters.")
-    print("Enter C to convert from Centimeters to Inches.")
-    print("Enter O to convert from Ounces to Grams.")
-    print("Enter G to convert from Grams to Ounces.")
-    print("Enter M to convert from Miles to Kilometers.")
-    print("Enter K to convert from Kilometers to Miles.")
+    print("\nEnter I to convert from Inches to Centimeters."
+          "\nEnter C to convert from Centimeters to Inches."
+          "\nEnter O to convert from Ounces to Grams."
+          "\nEnter G to convert from Grams to Ounces."
+          "\nEnter M to convert from Miles to Kilometers."
+          "\nEnter K to convert from Kilometers to Miles.")
 
     # Get conversion type
     conversion_type = input("\nEnter the type of conversion of conversion you would like to do: ").lower()
