@@ -3,7 +3,7 @@
 # October 29, 2023
 # Lab 9
 
-# Greeting
+# Greeting message and information
 print("Welcome to the Metric Conversion program!"
       "\nThis program will convert Inches to Centimeters, "
       "Centimeters to Inches, Ounces to Grams, Grams to Ounces, "
@@ -12,7 +12,7 @@ print("Welcome to the Metric Conversion program!"
 # Main Program Loop
 run_program = True
 while run_program:
-    # Explain the conversion list
+    # Explain the conversion list to the user
     print("\nEnter I to convert from Inches to Centimeters."
           "\nEnter C to convert from Centimeters to Inches."
           "\nEnter O to convert from Ounces to Grams."
@@ -20,7 +20,7 @@ while run_program:
           "\nEnter M to convert from Miles to Kilometers."
           "\nEnter K to convert from Kilometers to Miles.")
 
-    # Get conversion type
+    # Get conversion type input from user
     conversion_type = input("\nEnter the type of conversion of conversion you would like to do: ").lower()
 
     # Error check conversion type
@@ -35,7 +35,7 @@ while run_program:
         except ValueError:
             print("\nInvalid input. Please enter a valid number.")
     
-    # Perform conversion
+    # Perform conversion and create output message
     if conversion_type == 'i':
         output_value = input_value * 2.54
         message = f"{input_value} inches equals {output_value:.2f} centimeters."
@@ -55,10 +55,10 @@ while run_program:
         output_value = input_value / 1.609344
         message = f"{input_value} kilometers equals {output_value:.2f} miles."
     
-    # Print output
+    # Print output message
     print(f"\n{message}")
 
-    # Ask to run again
+    # Ask to run again and get input
     run_again = input("\nWould you like to mak anothe conversion? (y/n): ").lower()
 
     # Error check run again input
