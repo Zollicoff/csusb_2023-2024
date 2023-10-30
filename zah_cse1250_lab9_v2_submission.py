@@ -38,28 +38,28 @@ while run_program:
     # Perform conversion and create output message
     if conversion_type == 'i':
         output_value = input_value * 2.54
-        message = f"{input_value} inches equals {output_value:.2f} centimeters."
+        message = format(input_value, '.2f') + " inches equals " + format(output_value, '.2f') + " centimeters."
     elif conversion_type == 'c':
         output_value = input_value / 2.54
-        message = f"{input_value} centimeters equals {output_value:.2f} inches."
+        message = format(input_value, '.2f') + " centimeters equals " + format(output_value, '.2f') + " inches."
     elif conversion_type == 'o':
         output_value = input_value * 28.3495231
-        message = f"{input_value} ounces equals {output_value:.2f} grams."
+        message = format(input_value, '.2f') + " ounces equals " + format(output_value, '.2f') + " grams."
     elif conversion_type == 'g':
         output_value = input_value / 28.3495231
-        message = f"{input_value} grams equals {output_value:.2f} ounces."
+        message = format(input_value, '.2f') + " grams equals " + format(output_value, '.2f') + " ounces."
     elif conversion_type == 'm':
         output_value = input_value * 1.609344
-        message = f"{input_value} miles equals {output_value:.2f} kilometers."
+        message = format(input_value, '.2f') + " miles equals " + format(output_value, '.2f') + " kilometers."
     elif conversion_type == 'k':
         output_value = input_value / 1.609344
-        message = f"{input_value} kilometers equals {output_value:.2f} miles."
+        message = format(input_value, '.2f') + " kilometers equals " + format(output_value, '.2f') + " miles."
     
     # Print output message
     print(f"\n{message}")
 
     # Ask to run again and get input
-    run_again = input("\nWould you like to mak anothe conversion? (y/n): ").lower()
+    run_again = input("\nWould you like to make another conversion? (y/n): ").lower()
 
     # Error check run again input
     while run_again not in ['y', 'n']:

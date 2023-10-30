@@ -9,16 +9,6 @@ print("Welcome to the Metric Conversion program!"
       "Centimeters to Inches, Ounces to Grams, Grams to Ounces, "
       "Miles to Kilometers, or Kilometers to Miles.")
 
-# Define conversion factors and messages
-conversion_dict = {
-    'i': {'factor': 2.54, 'message': 'inches equals {:.2f} centimeters.'},
-    'c': {'factor': 1 / 2.54, 'message': 'centimeters equals {:.2f} inches.'},
-    'o': {'factor': 28.3495231, 'message': 'ounces equals {:.2f} grams.'},
-    'g': {'factor': 1 / 28.3495231, 'message': 'grams equals {:.2f} ounces.'},
-    'm': {'factor': 1.609344, 'message': 'miles equals {:.2f} kilometers.'},
-    'k': {'factor': 1 / 1.609344, 'message': 'kilometers equals {:.2f} miles.'}
-}
-
 # Main Program Loop
 run_program = True
 while run_program:
@@ -34,9 +24,9 @@ while run_program:
     conversion_type = input("\nEnter the type of conversion of conversion you would like to do: ").lower()
 
     # Error check conversion type
-    while conversion_type not in conversion_dict.keys():
+    while conversion_type not in ['i', 'c', 'o', 'g', 'm', 'k']:
         conversion_type = input("\nInvalid input. Please enter a valid conversion type: ").lower()
-
+    
     # Get input value with error check
     while True:
         try:
@@ -44,11 +34,27 @@ while run_program:
             break
         except ValueError:
             print("\nInvalid input. Please enter a valid number.")
-
+    
     # Perform conversion and create output message
-    output_value = input_value * conversion_dict[conversion_type]['factor']
-    message = f"{input_value} " + conversion_dict[conversion_type]['message'].format(output_value)
-
+    if conversion_type == 'i':
+        output_value = input_value * 2.54
+        message = f"{input_value} inches equals {output_value:.2f} centimeters."
+    elif conversion_type == 'c':
+        output_value = input_value / 2.54
+        message = f"{input_value} centimeters equals {output_value:.2f} inches."
+    elif conversion_type == 'o':
+        output_value = input_value * 28.3495231
+        message = f"{input_value} ounces equals {output_value:.2f} grams."
+    elif conversion_type == 'g':
+        output_value = input_value / 28.3495231
+        message = f"{input_value} grams equals {output_value:.2f} ounces."
+    elif conversion_type == 'm':
+        output_value = input_value * 1.609344
+        message = f"{input_value} miles equals {output_value:.2f} kilometers."
+    elif conversion_type == 'k':
+        output_value = input_value / 1.609344
+        message = f"{input_value} kilometers equals {output_value:.2f} miles."
+    
     # Print output message
     print(f"\n{message}")
 
