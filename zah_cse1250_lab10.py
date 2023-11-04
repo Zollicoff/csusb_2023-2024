@@ -15,14 +15,14 @@ fruitTypes = []
 fruitWeights = []
 
 # Initialize program_run to True
-programRun = True
+program_run = True
 
 # Main program loop
-while programRun:
+while program_run:
     fruit = input("\nPlease enter a type of fruit (or just hit Enter to finish and "
                   "print your list): ")
     if fruit == '':
-        programRun = False
+        program_run = False
     else:
         while True:
             weight = input("Please enter the weight of the fruit in pounds: ")
