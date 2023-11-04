@@ -17,7 +17,7 @@ conversion_dict = {
 }
 
 # Main Program Loop
-while True:/
+while True:
     # Explain the conversion list to the user
     print("\nEnter I to convert from Inches to Centimeters, C to convert from Centimeters to Inches, O to convert from Ounces to Grams, G to convert from Grams to Ounces, M to convert from Miles to Kilometers, or K to convert from Kilometers to Miles.")
 
