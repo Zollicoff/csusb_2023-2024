@@ -30,7 +30,7 @@ def get_conversion_type():
             if input_scale.upper() != output_scale.upper():
                 return input_scale.upper(), output_scale.upper()
             else:
-                print("Invalid input. Please select two different temperature unitst to convert.")
+                print("Invalid input. Please select two different temperature scales for conversion.")
         else:
             print("Invalid input. Please enter 'C', 'F', or 'K'.")
 
