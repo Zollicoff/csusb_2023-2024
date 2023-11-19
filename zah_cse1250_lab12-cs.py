@@ -71,10 +71,9 @@ def main_program():
 # Call the User Greeting function
 user_greeting()
 
-# Initialize run_program
+# Initialize run_program variable and call the main program function
 run_program = True
 
-# Main program loop
 while run_program:
     run_program = main_program()
 
