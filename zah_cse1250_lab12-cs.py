@@ -5,7 +5,7 @@
 
 # This program converts temperatures between Celsius, Fahrenheit, and Kelvin
 
-# define a function to display a user greeting
+# Define a function to display a user greeting
 def user_greeting():
     # Welcome message and display user instructions for program
     print("Hello and welcome to the temperature conversion program!"
@@ -34,6 +34,21 @@ def get_conversion_type():
         else:
             print("Invalid input. Please enter 'C', 'F', or 'K'.")
 
+# Define conversion functions
+def c_to_f(temp): return (temp * 9/5) + 32
+def f_to_c(temp): return (temp - 32) * 5/9
+def k_to_c(temp): return temp - 273.15
+def c_to_k(temp): return temp + 273.15
+def f_to_k(temp): return (temp + 459.67) * 5/9
+def k_to_f(temp): return (temp * 9/5) - 459.67
+
+# Define conversion dictionary
+conversions = {
+    'C': {'F': c_to_f, 'K': c_to_k},
+    'F': {'C': f_to_c, 'K': f_to_k},
+    'K': {'C': k_to_c, 'F': k_to_f}
+}
+
 # Define the main program function
 def main_program():
     # Get the conversion type
@@ -47,21 +62,8 @@ def main_program():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-    # Perform arithmetic operations and store results in variables
-    if input_scale == 'C' and output_scale == 'F':
-        converted_temperature = (temperature * 9/5) + 32
-    elif input_scale == 'F' and output_scale == 'C':
-        converted_temperature = (temperature - 32) * 5/9
-    elif input_scale == 'K' and output_scale == 'C':
-        converted_temperature = temperature - 273.15
-    elif input_scale == 'C' and output_scale == 'K':
-        converted_temperature = temperature + 273.15
-    elif input_scale == 'F' and output_scale == 'K':
-        converted_temperature = (temperature + 459.67) * 5/9
-    elif input_scale == 'K' and output_scale == 'F':
-        converted_temperature = (temperature * 9/5) - 459.67
-    else: # input_scale == output_scale
-        converted_temperature = temperature
+    # Perform conversion
+    converted_temperature = conversions[input_scale][output_scale](temperature)
 
     print(f"\n{temperature} degrees {input_scale} is equal to {converted_temperature:.1f} degrees {output_scale}.\n")
 
