@@ -70,9 +70,9 @@ def calculate(product_info):
 
 # Define run again function
 def run_again():
-    run = input("\nWould you like to fill another order? (y/n): ")
+    run = input("\nWould you like to fill another order? (y/n): ").lower()
     while run not in ['y', 'n']:
-        run = input("Invalid input. Please enter 'y' or 'n': ")
+        run = input("Invalid input. Please enter 'y' or 'n': ").lower()
     if run == 'n':
         print("\nThanks for using this program. Have a nice day!")
     return run == 'y'
