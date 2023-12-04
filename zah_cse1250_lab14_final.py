@@ -7,7 +7,19 @@
 
 # Define user greeting function
 def user_greeting():
-    print("Welcome to the Shipping Program!")
+    print("This program lets the user enter products to be shipped and calculates the subtotal, tax, shipping and handling, and the total due.")
+
+# Define get product info function
+def get_product_info():
+    product_info = []
+    item_quantity = 1
+    while item_quantity != 0:
+        item_quantity = int(input("\nEnter item quantity (enter 0 if done): "))
+        if item_quantity != 0:
+            item_weight = float(input("Enter item weight: "))
+            item_cost = float(input("Enter cost of item: "))
+            product_info.append([item_quantity, item_weight, item_cost])
+    return product_info
 
 # Define get state function
 def get_state():
@@ -16,18 +28,6 @@ def get_state():
     while state not in states:
         state = input("Invalid state. Please enter a valid state abbreviation: ")
     return state
-
-# Define get product info function
-def get_product_info():
-    product_info = []
-    item_quantity = 1
-    while item_quantity != 0:
-        item_quantity = int(input("Enter item quantity (0 to stop): "))
-        if item_quantity != 0:
-            item_weight = float(input("Enter item weight: "))
-            item_price = float(input("Enter item price: "))
-            product_info.append([item_quantity, item_weight, item_price])
-    return product_info
 
 # Define calculate function
 def calculate(product_info):
