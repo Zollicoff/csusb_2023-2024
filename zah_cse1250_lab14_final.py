@@ -10,7 +10,7 @@ def user_greeting():
     print("This program lets the user enter products to be shipped and calculates the subtotal, "
           "tax, shipping and handling, and the total due.")
 
-# Define get product info function, with error checking on inputs
+# Define get product info function (quantity, weight, cost), with error checking on inputs
 def get_product_info():
     product_info = []
     item_quantity = 1
