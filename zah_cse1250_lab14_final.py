@@ -3,13 +3,13 @@
 # 12-08-2023
 # Lab 14 Final
 
-# This program calculates the total due for a shipment of products.
+# This program calculates the total due for a shipment of products using quantity, weight, and cost of each item.
 
 # Define user greeting function
 def user_greeting():
     print("This program lets the user enter products to be shipped and calculates the subtotal, tax, shipping and handling, and the total due.")
 
-# Define get product info function
+# Define get product info function, with error checking on inputs
 def get_product_info():
     product_info = []
     item_quantity = 1
