@@ -20,20 +20,20 @@ def get_product_info():
                 item_quantity = int(input("\nEnter item quantity (enter 0 if done): "))
                 break
             except ValueError:
-                print("Invalid input. Please enter a number.")
+                print("ERROR- Please enter a whole number.")
         if item_quantity != 0:
             while True:
                 try:
                     item_weight = float(input("Enter item weight: "))
                     break
                 except ValueError:
-                    print("Invalid input. Please enter a number.")
+                    print("ERROR- Please enter a number.")
             while True:
                 try:
                     item_cost = float(input("Enter cost of item: "))
                     break
                 except ValueError:
-                    print("Invalid input. Please enter a number.")
+                    print("ERROR- Please enter a number.")
             product_info.append([item_quantity, item_weight, item_cost])
     return product_info
 
@@ -73,7 +73,7 @@ def calculate(product_info):
 def run_again():
     run = input("\nWould you like to fill another order? (y/n): ").lower()
     while run not in ['y', 'n']:
-        run = input("Invalid input. Please enter 'y' or 'n': ").lower()
+        run = input("ERROR- Please enter 'y' or 'n': ").lower()
     if run == 'n':
         print("\nThanks for using this program. Have a nice day!")
     return run == 'y'
