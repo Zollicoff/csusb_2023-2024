@@ -2,17 +2,17 @@
 using namespace std;
 
 int main () {
-   int hourlyWage;
+    int hourlyWage;
    
-   hourlyWage = 20;
+    hourlyWage = 20;
 
-   cout << "Annual salary is: ";
-   cout << hourlyWage * 40 * 50;
-   cout << endl;
+    cout << "Annual salary is: ";
+    cout << hourlyWage * 40 * 50;
+    cout << endl;
 
-   cout << "Monthly salary is: ";
-   cout << ((hourlyWage * 40 * 50) / 12);
-   cout << endl;
+    cout << "Monthly salary is: ";
+    cout << ((hourlyWage * 40 * 50) / 12);
+    cout << endl;
 
-   return 0;
+    return 0;
 }
