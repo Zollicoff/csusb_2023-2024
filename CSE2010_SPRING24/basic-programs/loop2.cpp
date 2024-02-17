@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	string stringToFind;
+    string stringToFind;
 	string inputString;
 	int expectedCount;
 
@@ -11,12 +11,12 @@ int main() {
 
 	expectedCount = 1;
 
-   while (inputString != "Stop") {
-      if (inputString == stringToFind) {
-         expectedCount = expectedCount + 1;
-      }
-      cin >> inputString;
-   }
+    while (inputString != "Stop") {
+        if (inputString == stringToFind) {
+            expectedCount = expectedCount + 1;
+        }
+        cin >> inputString;
+    }
 
 	cout << stringToFind << " occurs " << expectedCount << " time(s)." << endl;
 
