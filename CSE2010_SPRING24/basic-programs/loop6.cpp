@@ -2,20 +2,20 @@
 using namespace std;
 
 int main() {
-   int numInput;
-   int variable;
-   int i;
+    int numInput;
+    int variable;
+    int i;
    
-   cin >> numInput;
+    cin >> numInput;
 
-   for (i = 0; i < numInput; ++i) {
-      cin >> variable;
-      if (i != numInput - 1) {
-         cout << variable << ", " ;
-      } else { 
-         cout << variable << endl;
-      }
-   }
+    for (i = 0; i < numInput; ++i) {
+        cin >> variable;
+        if (i != numInput - 1) {
+            cout << variable << ", " ;
+        } else { 
+            cout << variable << endl;
+        }
+    }
 
-   return 0;
+    return 0;
 }
