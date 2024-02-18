@@ -10,7 +10,7 @@ int main() {
    cin >> simonPattern;
    cin >> userPattern;
 
-   for (i = 0; i < simonPattern.length(); ++i) {
+   for (int i = 0; i < simonPattern.length(); ++i) {
       if (simonPattern[i] == userPattern[i]) {
          userScore++;
       } else {
