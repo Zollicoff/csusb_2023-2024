@@ -38,8 +38,8 @@ int main() {
 
    cin >> inputName;
    cin >> inputAge;
-   
-   /* Your code goes here */
+   person.SetName(inputName);
+   person.SetAge(inputAge);
  
    cout << "Description: " << person.GetName();
    cout << "'s age is " << person.GetAge() << " years old" << endl;
