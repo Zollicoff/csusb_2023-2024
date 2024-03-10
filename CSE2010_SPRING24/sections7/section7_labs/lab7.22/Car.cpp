@@ -13,12 +13,12 @@ int Car::GetModelYear() const {
 }
 
 // TODO: Implement SetPurchasePrice() function
-int Car::SetPurchasePrice(int userPrice) {
+void Car::SetPurchasePrice(int userPrice) {
    purchasePrice = userPrice;
 }
 
 // TODO: Implement GetPurchasePrice() function
-void Car::GetPurchasePrice() const {
+int Car::GetPurchasePrice() const {
    return purchasePrice;
 }
 
@@ -33,7 +33,7 @@ void Car::CalcCurrentValue(int currentYear) {
 // TODO: Implement PrintInfo() function to output modelYear, purchasePrice, and currentValue
 void Car::PrintInfo() const {
    cout << "Car's information:" << endl;
-   cout << "   Model year: " << modelYear << endl;
-   cout << "   Purchase price: " << purchasePrice << endl;
-   cout << "   Current value: " << currentValue << endl;
+   cout << "  Model year: " << modelYear << endl;
+   cout << "  Purchase price: $" << GetPurchasePrice() << endl;
+   cout << "  Current value: $" << fixed << setprecision(0) << currentValue << endl;
 }

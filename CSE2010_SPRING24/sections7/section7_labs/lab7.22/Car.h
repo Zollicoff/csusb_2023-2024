@@ -5,6 +5,7 @@ class Car {
    private:
       int modelYear; 
       // TODO: Declare purchasePrice member (int)
+      int purchasePrice;
       double currentValue;
    
    public:
@@ -15,7 +16,7 @@ class Car {
       void SetPurchasePrice(int userPrice);
          
       // TODO: Declare GetPurchasePrice() function
-      void GetPurchasePrice() const;
+      int GetPurchasePrice() const;
 
       void CalcCurrentValue(int currentYear);
    
