@@ -37,6 +37,9 @@ void FillLibraries(LinkedListLibrary &linkedListLibrary, VectorLibrary &vectorLi
 }
 
 int main () {
+   int linkedListOperations = 0;
+   int vectorOperations = 0;
+
    // Create libraries
    LinkedListLibrary linkedListLibrary = LinkedListLibrary();
    VectorLibrary vectorLibrary;
@@ -60,13 +63,18 @@ int main () {
    // Insert into linked list
    // No need to delete currNode, deleted by LinkedListLibrary destructor
    currNode = new BookNode(bookTitle, bookAuthor, bookISBN);
-   int linkedListOperations = linkedListLibrary.InsertSorted(currNode);
-   cout << "Number of linked list book copy operations: " << linkedListOperations << endl;
+   linkedListOperations = linkedListLibrary.InsertSorted(currNode);
 
    // Insert into VectorList
    tempBook  = Book(bookTitle, bookAuthor, bookISBN);
-   int vectorOperations = vectorLibrary.InsertSorted(tempBook);
+   vectorOperations = vectorLibrary.InsertSorted(tempBook);
+
+   // Print number of operations for linked list
+   cout << "Number of linked list book copy operations: " << linkedListOperations << endl;
+
+   // Print number of operations for vector
    cout << "Number of vector book copy operations: " << vectorOperations << endl;
 
    return 0;
 }
+
