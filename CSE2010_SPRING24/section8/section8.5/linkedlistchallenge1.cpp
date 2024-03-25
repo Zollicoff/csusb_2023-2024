@@ -47,6 +47,13 @@ int main() {
    headObj = new RabbitNode(-1);
    
    /* Your code goes here */
+   headObj = new RabbitNode(-1);
+   
+   firstRabbit = new RabbitNode(babies1);
+   headObj->InsertAfter(firstRabbit);
+   
+   secondRabbit = new RabbitNode(babies2);
+   firstRabbit->InsertAfter(secondRabbit);
 
    currRabbit = headObj;
    while (currRabbit != nullptr) {
