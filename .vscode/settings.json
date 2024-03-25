@@ -4,7 +4,8 @@
     "*.tcc": "cpp",
     "cmath": "cpp",
     "ostream": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "iomanip": "cpp"
   },
   "[javascript]": {
     "editor.tabSize": 2
